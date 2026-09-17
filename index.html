@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portafolio Profesional - Mónica María</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; color: #2c3e50; }
+    header { background: #34495e; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; }
+    nav a { margin: 0 10px; color: #ecf0f1; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .container { padding: 20px; max-width: 1000px; margin: auto; }
+    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .card:hover { transform: scale(1.02); }
+    .kanban { display: flex; flex-wrap: wrap; gap: 20px; }
+    .kanban .card { flex: 1 1 45%; }
+    button { background: #2980b9; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #1f6391; }
+    blockquote { font-style: italic; color: #555; border-left: 4px solid #2980b9; padding-left: 10px; margin: 10px 0; }
+    @media (max-width: 600px) { .kanban { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Portafolio Profesional - Mónica María Marín Castro</h1>
+    <nav>
+      <a href="#cv">CV</a>
+      <a href="#recomendaciones">Recomendaciones</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="cv" class="card">
+      <h2>📄 Curriculum Vitae</h2>
+      <p>Administradora de Empresas y Especialista en Mercadeo con 6 años de experiencia en financiamiento, CX y liderazgo.</p>
+      <button onclick="window.open('CV_MonicaMaria.pdf','_blank')">Descargar CV</button>
+    </section>
+
+    <section id="recomendaciones" class="card">
+      <h2>💬 Recomendaciones Profesionales</h2>
+      <blockquote>"Mónica es una compañera excepcional, con gran liderazgo y compromiso." – Marcela López</blockquote>
+      <blockquote>"Su pasión y curiosidad intelectual la destacan en cada proyecto." – Jennifer Sepúlveda</blockquote>
+      <blockquote>"Moni es proactiva, resolutiva y un gusto trabajar con ella." – Herceleyde Cossio</blockquote>
+      <!-- Agrega aquí las demás recomendaciones -->
+    </section>
+
+    <section id="proyectos" class="card">
+      <h2>🚀 Proyectos y Publicaciones</h2>
+      <div class="kanban">
+        <div class="card">
+          <h3>🌐 Selcco</h3>
+          <p>Plataforma de inclusión financiera.</p>
+          <button onclick="window.open('https://selccoljov.lovable.app','_blank')">Ver Proyecto</button>
+        </div>
+        <div class="card">
+          <h3>🔧 Mission Hub Forge</h3>
+          <p>Herramienta de desarrollo empresarial.</p>
+          <button onclick="window.open('https://mission-hub-forge.lovable.app','_blank')">Ver Proyecto</button>
+        </div>
+        <div class="card">
+          <h3>📢 Publicaciones LinkedIn</h3>
+          <button onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7343347929069355008','_blank')">Ver Post</button>
+          <button onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7385028823106613248','_blank')">Ver Post</button>
+        </div>
+        <div class="card">
+          <h3>🎥 Videos</h3>
+          <button onclick="window.open('https://www.youtube.com/watch?v=141s1nqCsVc','_blank')">Evento 1</button>
+          <button onclick="window.open('https://www.youtube.com/watch?v=nHm8kkJo_7Y','_blank')">Evento 2</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>📬 Contacto</h2>
+      <p>📍 Cali, Colombia</p>
+      <p>📧 marincastromonicamaria@gmail.com</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/monicamariamarincastro" target="_blank">LinkedIn</a></p>
+      <p>📞 <a href="tel:+573215070382">+57 321 507 0382</a></p>
+    </section>
+  </div>
+</body>
+</html>
